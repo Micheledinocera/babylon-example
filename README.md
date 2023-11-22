@@ -3,7 +3,7 @@
 ## Start Project
 
 To run the code, you need npm and node installed on your machine.\
-The code is tested on a PC with `Windows 8` OS, browser Chrome.\
+The code is tested on a PC with `Windows 10` OS, browser Chrome.\
 In the project directory, you can run:
 
 ### npm run start
