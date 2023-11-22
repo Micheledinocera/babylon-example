@@ -3,7 +3,7 @@
 ## Start Project
 
 To run the code, you need npm and node installed on your machine.\
-The code is tested on a PC with 'Windows 8' OS, browser Chrome.\
+The code is tested on a PC with `Windows 8` OS, browser Chrome.\
 In the project directory, you can run:
 
 ### npm run start
@@ -14,7 +14,7 @@ In order to change the subpath you can change it in the package.json.
 
 ### npm run build
 
-Builds the app for production to the 'docs' folder.\
+Builds the app for production to the `docs` folder.\
 In order to change the build folder you can change it in the package.json
 
 ### npm run test
