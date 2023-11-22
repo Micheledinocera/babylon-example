@@ -99,12 +99,17 @@ const App: FC = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="title"> @babylonjs + `react-babylonjs` </div>
-        {selectedShape?<div className="value"> Selected shape {selectedShape.id} </div>:null}
+      <div className="camera"> Move camera with mouse and arrows </div>
+      {selectedShape? 
+        <div className="shape"> Selected shape <b>{selectedShape.id}</b>. Move it with WASD keys. Press Backspace to revert movement or press the green button in frame</div>:
+        <div className="shape"> Click on a shape to select it </div>
+      }
+      <div className="buttons-container">
         <button onClick={resetCameraPosition}> Reset Camera Position</button>
         <button onClick={resetObjectsPosition}> Reset Objects Position</button>
         <button onClick={resetObjectsAndCamera}> Reset Objects and Camera Position</button>
+      </div>
+      <div className="canvas-container">
         <Engine antialias adaptToDeviceRatio canvasId="sample-canvas">
           <Scene onKeyboardObservable={onKeyboardObservable} onSceneMount={onSceneMount}>
             <hemisphericLight name='hemi' direction={Vector3.Up()} />
@@ -149,7 +154,7 @@ const App: FC = () => {
             }
           </Scene>
         </Engine>
-      </header>
+      </div>
     </div>
   );
 }
