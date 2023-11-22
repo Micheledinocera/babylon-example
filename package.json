@@ -1,5 +1,5 @@
 {
-  "name": "knowce-babylon-app",
+  "name": "babylon-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "/babylon-example"
 }
